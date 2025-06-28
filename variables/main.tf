@@ -55,7 +55,9 @@ output "a1" {
   value = var.a
 }
 
-variable "cli" {}
+variable "cli" {
+  default = 1
+}
 
 output "cli-is" {
   value = var.cli
