@@ -54,3 +54,9 @@ output "c1" {
 output "a1" {
   value = var.a
 }
+
+variable "cli" {}
+
+output "cli-is" {
+  value = var.cli
+}
