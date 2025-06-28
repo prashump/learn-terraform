@@ -74,3 +74,9 @@ variable "env" {}
 output "env-is" {
   value = var.env
 }
+
+variable "server_count" {}
+
+output "server-count-is" {
+  value = var.server_count
+}
