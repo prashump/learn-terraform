@@ -55,7 +55,7 @@ provider "azurerm" {
 resource "azurerm_virtual_machine" "test" {
   name                  = "test-vm"
   location              = "UK West"
-  resource_group_name   = project-setup
+  resource_group_name   = "project-setup"
   network_interface_ids = ["/subscriptions/fce3d656-0949-412a-9e49-d5c96a4783c9/resourceGroups/project-setup/providers/Microsoft.Network/networkInterfaces/terraform-testing"]
   vm_size               = "Standard_B2ls"
 
