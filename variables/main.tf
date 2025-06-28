@@ -68,3 +68,9 @@ variable "v" {}
 output "v-value" {
   value = var.v
 }
+
+variable "env" {}
+
+output "env-is" {
+  value = var.env
+}
