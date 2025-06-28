@@ -62,3 +62,9 @@ variable "cli" {
 output "cli-is" {
   value = var.cli
 }
+
+variable "v" {}
+
+output "v-value" {
+  value = var.v
+}
