@@ -11,5 +11,9 @@ resource "null_resource" "test" {
 }
 
 output "test" {
-  value = null_resource.test.id
+  value = null_resource.test[*].id
+}
+
+output "testx" {
+  value = null_resource.test[1].id
 }
