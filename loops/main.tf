@@ -17,3 +17,13 @@ output "test" {
 output "testx" {
   value = null_resource.test[1].id
 }
+
+# count resourcelabel.locallabel[*].attribute
+# looping purpose count is not good to use
+
+# variable "nodes" {
+#   default = [
+#     "test1",
+#     "test2"
+#   ]
+# }
