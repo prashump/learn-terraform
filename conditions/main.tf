@@ -25,3 +25,4 @@ resource "azurerm_network_interface" "privateip" {
     private_ip_address_allocation = length(try(each.value["private_ip_address_allocation"], "")) > 0 ? each.value["private_ip_address_allocation"] : "Dynamic"
   }
 }
+
