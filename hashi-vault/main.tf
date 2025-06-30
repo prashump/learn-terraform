@@ -10,6 +10,6 @@ provider "vault" {
 variable "token" {}
 
 resource "local_file" "vault" {
-  content  = jsonencode(data.vault_generic_secret.secret.data["user"])
+  content  = data.vault_generic_secret.secret.data["user"]
   filename = "/tmp/vault"
 }
