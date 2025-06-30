@@ -3,7 +3,7 @@ data "vault_generic_secret" "secret" {
 }
 
 provider "vault" {
-  address = "https://vault.prashumps.online:8200"
+  address = "http://vault.prashumps.online:8200"
   token = var.token
 }
 
